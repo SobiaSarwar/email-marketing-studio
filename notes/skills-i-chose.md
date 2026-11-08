@@ -2,6 +2,12 @@
 
 Searched skills.sh on 2026-11-04. Nothing has been installed. Star counts are from GitHub on the same day.
 
+## Final choices (decided 2026-11-08)
+
+1. **Planning and writing campaigns:** Anthropic's marketing plugin (`anthropics/knowledge-work-plugins`). Already installed for this project.
+2. **Sending email:** Resend's own skills (`resend/resend-skills`). Not installed yet.
+3. **Runner-up:** `coreyhaines31/marketingskills`. Not installed. Read its `SKILL.md` first, because it comes from an individual author and not an official company.
+
 ## Use these
 
 1. **Writing campaigns: `anthropics/knowledge-work-plugins`** (skills `campaign-plan` and `email-sequence`)
