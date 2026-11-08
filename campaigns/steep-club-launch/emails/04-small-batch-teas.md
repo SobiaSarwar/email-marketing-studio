@@ -14,7 +14,7 @@ Here's what we can offer: small-batch, loose-leaf teas, picked to try beyond you
 
 We won't tell you it's better than what you drink now. We'll tell you what's in it, and let your cup decide.
 
-If you're new to loose-leaf, don't worry. Every tea comes with steeping notes.
+If you're new to loose-leaf, don't worry. [Owner to confirm: steeping notes come with each tea.]
 
 [Start your box](https://kettlebird.example/steep-club)
 

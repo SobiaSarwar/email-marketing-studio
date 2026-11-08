@@ -18,8 +18,8 @@ We want you to know what you're getting before you start. No surprises.
 **In the first box:** [Owner to confirm: the exact teas]
 
 **Choosing your start:**
-- *New to loose-leaf?* We include steeping steps for every tea.
-- *Buying for someone else?* A box makes a gift that keeps going. [Owner to confirm: how gifting works.]
+- *New to loose-leaf?* [Owner to confirm: steeping notes come with each tea.]
+- *Buying for someone else?* A box can be a gift. [Owner to confirm: how gifting works.]
 - *Already a daily drinker?* Small-batch teas to try beyond your usual cup.
 
 [See the box](https://kettlebird.example/steep-club)
