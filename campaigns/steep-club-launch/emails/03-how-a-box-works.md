@@ -1,24 +1,7 @@
-# Email 3: How a Steep Club box works
+Subject: How a Steep Club box works
+Preview: Three easy steps. Then, a quiet cup.
 
-**Status:** Draft for owner review. Test content only. Not sent.
-
-**Send:** Tuesday 15 December 2026
-**Goes to:** Everyone on the waitlist who has not started a subscription
-**Purpose:** Remove the worry about doing it wrong. Explain steeping basics and how gifting works.
-
-## Subject line options
-
-1. How a Steep Club box works
-2. Steeping is simpler than it looks
-3. No tea experience needed
-
-## Preview text
-
-Three easy steps. Then, a quiet cup.
-
-## Body
-
-Hi [First name],
+Hi {{first_name}},
 
 Short one today. It's a busy time of year.
 
@@ -36,13 +19,10 @@ Each tea in your box comes with its own steeping notes. [Owner to confirm: how t
 
 **Giving it as a gift?** [Owner to confirm: how gift boxes work and how to add a note.] We can't promise a delivery date, so check the sign-up page for what we can confirm.
 
-**[Button: Start your box]** → [Sign-up page link]
+[Start your box](https://kettlebird.example/steep-club)
 
 Warmly,
 The Kettlebird Tea team
 
-## Notes
-
-- Keep short (holiday rush).
-- Billing, pause and cancel details come from the owner.
-- Don't promise delivery dates, even for gifts.
+You're getting this because you joined the Kettlebird Tea waitlist.  
+Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
