@@ -14,6 +14,7 @@ This studio is for planning and writing email campaigns for a small business.
 - Write in plain English. Keep sentences short and avoid jargon.
 - Never send email to real people. Drafts and test content only.
 - Ask me before deleting anything.
+- Save every email draft in `campaigns/<campaign-name>/emails/`. The email rules only load for files in an `emails/` folder.
 
 ## Brand voice
 
