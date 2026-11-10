@@ -5,7 +5,7 @@ Hi {{first_name}},
 
 Last chance! Hurry, this offer ends tonight.
 
-Our teas detox your body and boost your immunity. They are the best tea you can buy.
+Our teas are made for a cozy cup. They are the best tea you can buy.
 
 [Join now](https://kettlebird.example/steep-club)
 

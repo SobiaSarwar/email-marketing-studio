@@ -1,39 +1,40 @@
 {
+  "folder": "campaigns/test-bad",
   "findings": [
     {
-      "file": "campaigns/steep-club-launch/groups/*/emails/01-steep-club-is-here.md (and base emails/01-steep-club-is-here.md preview)",
+      "file": "campaigns/test-bad/emails/01-bad.md",
       "line": 1,
       "severity": "high",
-      "problem": "Launch status stated as settled. Group 01 subject 'The Steep Club is here' and preview 'Now you can start your box' (base 01 preview too) say the Club is open; the owner has not confirmed. The body's Owner-to-confirm tag does not cover subject/preview.",
-      "fix": "Remove the launch claim from the subject and preview, or wrap in [Owner to confirm: ...]; use neutral wording."
+      "problem": "Subject says \"Detox\". This is a banned health buzzword and implies a medical claim.",
+      "fix": "Use a plain subject with no health claim, e.g. \"Your first cup from The Steep Club\"."
     },
     {
-      "file": "campaigns/steep-club-launch/groups/*/emails/01-steep-club-is-here.md",
-      "line": 1,
-      "severity": "medium",
-      "problem": "Group 01 files are stale versus the edited base 01 (subject 'Make room for a quiet cup'); they still use the old subject.",
-      "fix": "Regenerate the three group 01 files from the updated base email."
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 2,
+      "severity": "high",
+      "problem": "Preview uses pressure (\"Last chance\") and fake scarcity (\"Boxes are going fast\").",
+      "fix": "Replace with calm, honest text, e.g. \"A monthly tea box, made for your cozy corner.\""
     },
     {
-      "file": "campaigns/steep-club-launch/emails/03-how-a-box-works.md (and 3 group 03 files)",
-      "line": 14,
-      "severity": "medium",
-      "problem": "Steeping note wording differs from the required exact line '[Owner to confirm: steeping notes come with each tea.]'. Also 'Wait the time on your card' (line 11) presents a steeping card as confirmed.",
-      "fix": "Use the exact required wording, and rephrase step 2 so it does not assume a card (or tag it Owner to confirm)."
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "high",
+      "problem": "\"Last chance! Hurry, this offer ends tonight.\" uses banned pressure words. It also states an offer and deadline the owner has not confirmed.",
+      "fix": "Remove it. If an offer exists, write it as `[Owner to confirm: ...]` and keep the tone calm."
     },
     {
-      "file": "campaigns/steep-club-launch/emails/02-whats-in-your-box.md (and 3 group 02 files, plus gift-buyers 03)",
-      "line": 22,
-      "severity": "medium",
-      "problem": "Gifting stated as fact: 'A box can be a gift' in all four 02 files; gift-buyers 02 adds 'a gift for someone who enjoys a quiet cup' and gift-buyers 03 says 'the person you give it to gets to enjoy'.",
-      "fix": "Wrap gifting statements in [Owner to confirm: ...]."
-    },
-    {
-      "file": "campaigns/steep-club-launch/emails/03-how-a-box-works.md (and 3 group 03 files; 02 files line 6)",
+      "file": "campaigns/test-bad/emails/01-bad.md",
       "line": 8,
-      "severity": "low",
-      "problem": "Unsupported claims: 'A lot of people tell us they worry about getting tea \"wrong\"' (all 03 files) and 'You asked what's in the box' (all 02 files; this is a one-way send). Not backed by brand files and near the 'promises we can't keep' rule.",
-      "fix": "Rewrite honestly, e.g. 'If you're worried about getting tea wrong, you can't' and 'Here's what's in the box.'"
+      "severity": "high",
+      "problem": "\"They are the best tea you can buy.\" is a banned \"best\" claim.",
+      "fix": "Say something honest and small, e.g. \"Our small-batch loose-leaf teas are picked for a cozy cup.\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 12,
+      "severity": "medium",
+      "problem": "A second link (kettlebird.example/boxes) breaks the rule of exactly one main link.",
+      "fix": "Delete the \"see the boxes\" line and keep only [Join now](https://kettlebird.example/steep-club)."
     }
   ]
 }

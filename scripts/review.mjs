@@ -14,8 +14,21 @@ if (!folder) {
 }
 
 const schema = JSON.stringify(JSON.parse(readFileSync(resolve(root, "review/findings.schema.json"), "utf8")));
-const prompt =
+let prompt =
   `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. Report only real problems.`;
+
+// If an earlier review of the same folder exists, include its findings.
+const findingsPath = resolve(root, "review/findings.json");
+try {
+  const prev = JSON.parse(readFileSync(findingsPath, "utf8"));
+  if (prev.folder === folder && Array.isArray(prev.findings)) {
+    prompt +=
+      " Earlier findings: " + JSON.stringify(prev.findings) +
+      " These are findings from the last review. Report only problems that are new or still not fixed. Don't repeat ones that have been fixed.";
+  }
+} catch {
+  // No earlier review. Start fresh.
+}
 
 const args = [
   "-p", prompt,
@@ -55,7 +68,7 @@ if (!out || !Array.isArray(out.findings)) {
 }
 
 mkdirSync(resolve(root, "review"), { recursive: true });
-writeFileSync(resolve(root, "review/findings.json"), JSON.stringify(out, null, 2) + "\n");
+writeFileSync(findingsPath, JSON.stringify({ folder, findings: out.findings }, null, 2) + "\n");
 
 const count = (sev) => out.findings.filter((f) => f.severity === sev).length;
 const high = count("high");
